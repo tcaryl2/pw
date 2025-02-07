@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 import dotenv from "dotenv";
-import { connectDB } from "./backend/config/db.js";
+//import { connectDB } from "./backend/config/db.js";
 
 import productRoutes from "./backend/routes/product.routes.js"
 
@@ -21,6 +21,6 @@ app.get("*", (req, res)=>{
 });
 
 app.listen(PORT, ()=>{
-    connectDB();
+    //connectDB();
     console.log(`Server started at http://localhost:${PORT}`)
 });

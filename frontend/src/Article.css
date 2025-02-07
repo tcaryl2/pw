@@ -1,0 +1,15 @@
+.article{
+    display:flex;
+    min-height: 100vh;
+    background-color: navy;
+    justify-content: space-between;
+}
+.article-left, .article-right{
+    width: 20vw;
+    background-color: rgba(0, 81, 128, 0.807);
+}
+.article-center{
+    max-width: 50vw;
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.897);
+}

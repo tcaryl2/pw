@@ -1,0 +1,119 @@
+.vid-right{
+    height: 100vh;
+    background-color: seagreen;
+    justify-content: center;
+    align-items: center;
+}
+.vid-right h2{
+    font-size: 4rem;
+    text-align: right;
+    padding: 2vh 8vw;
+    color:white;
+}
+.vid-right h3{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 2vh 0vw;
+    color:white;
+}
+.vid-right .vr-content{
+    display: flex;
+    place-content: center;
+    margin: 0vh 4vw;
+    
+}
+.vid-right .vr-content .vr-about{
+    width: 40vw;
+    font-size: 2.75rem;
+    margin: 0vh 6vw 0vh 2vw;
+    padding: 1vh 2vw;
+    color:white;
+}
+.vid-right .vr-content .vr-slides{
+    margin: 0vh 4vw 0vh 0vw;
+}
+.vid-right .vr-slides{
+    position: relative;
+    width: 600px;
+    height: 500px;    
+}
+.vid-right .vr-slides img{
+    width: 600px;
+    height: 425px;    
+}
+.vid-right .vr-slides .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.vid-right .vr-slides .slide.active{
+    clip-path: circle(150.0% at 0 50%);
+    transition: 1s;
+    transition-property: clip-path;
+}
+.vid-right .vr-slides .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+.vid-right .vr-slides .slide .info{
+    position: absolute;
+    top:0;
+    padding: 15px 30px;
+}
+.vid-right .vr-slides .slide .info h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.vid-right .vr-slides .slide .info p{
+    background: rgba(0, 0, 0, .2);
+    font-size: 16px;
+    border-radius: 4px;
+}
+.vid-right .vr-slides .gallery-nav{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.vid-right .vr-slides .gallery-nav .btn{
+    background: rgba(255, 255, 255, 0.693);
+    width: 1vw;
+    height: 1vw;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+.vid-right .vr-slides .gallery-nav .btn.active{
+    background: rgb(0, 238, 255);
+    box-shadow:  0 0 2px rgba(0, 0, 0, .5);
+}
+@media (max-width:620px){
+    .vr-slides{
+        width: 400px;
+        height: 250px;
+    }
+    .vr-slides .slide .info{
+        padding: 10px 25px;
+    }
+    .vr-slides .slide .info h2{
+        font-size: 35px;
+    }
+    .vr-slides .slide .info p{
+        width: 70%;
+        font-size: 15px;
+    }
+    .vr-slides .gallery-nav{
+        bottom: 25px;
+    }
+    .vr-slides .gallery-nav .btn{
+        width: 100px;
+        height: 100px;
+        margin: 8px;
+    }
+}
+  

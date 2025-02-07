@@ -1,0 +1,15 @@
+.home-expertise{
+    height:100vh;
+    background-color: rgb(48, 146, 163);
+    
+}
+.home-expertise h1{
+    font-size: 4rem;
+    padding: 1vh 4vw;
+    color:whitesmoke;
+}
+.home-expertise p{
+    font-size: 3rem;
+    color:whitesmoke;
+    padding: 1vh 4vw;
+}

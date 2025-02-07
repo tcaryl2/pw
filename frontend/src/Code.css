@@ -1,0 +1,31 @@
+.terminal{
+    padding: 25px;
+    max-width: 40vw;
+    font-size: 1.1rem;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+.terminal .terminal-header{
+    color:whitesmoke;
+    font-weight: 600;
+    background-color: #000000e7;;
+    border-top-left-radius: var(--terminal-border-radius);
+    border-top-right-radius: var(--terminal-border-radius);
+    padding: var(--terminal-padding);
+}
+.terminal .terminal-body{
+    padding: var(--terminal-padding);
+    background-color: #1e1e1ee9;
+    border-bottom-left-radius: var(--terminal-border-radius);
+    border-bottom-right-radius: var(--terminal-border-radius);
+}
+.terminal .terminal-body code{
+    color:white;
+}
+.terminal .terminal-body code bold{
+    color:white;
+    font-weight: 600;
+}
+.terminal .terminal-body code success{
+    color:rgb(0, 159, 0);
+    font-weight: 525;
+}

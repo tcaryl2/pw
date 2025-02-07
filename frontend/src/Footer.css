@@ -1,0 +1,4 @@
+footer{
+    height:100vh;
+    background-image: linear-gradient(var(--nav-color), rgb(29, 151, 216));
+}
