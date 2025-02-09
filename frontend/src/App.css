@@ -2,8 +2,7 @@
 
 :root{
   --nav-color: rgb(28, 186, 189);
-  --terminal-border-radius: 15px;
-  --terminal-padding:12px;
+  --terminal-border-radius: 12px;
 }
 
 *{

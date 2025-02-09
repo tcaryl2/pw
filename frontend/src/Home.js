@@ -8,8 +8,7 @@ import HomeExpertise from "./HomeExpertise";
 import VidLeft from "./VidLeft";
 import VidRight from "./VidRight";
 
-import { econ_text, fin_text, ds_text } from "./HomeAssets";
-
+import { econText, econTextList, finText, finTextList, finProjectSource, dsText, dsTextList } from "./HomeAssets";
 const Home = () => {
     return (
         <div className="home-content">
@@ -17,9 +16,10 @@ const Home = () => {
             <HomeAbout/>
             <HomeExtra/>
             <HomeExpertise/>
-            <VidLeft title = "Finance" text_list = { fin_text } img_list = { 3 }/>
-            <VidRight title = "Data Science" text_list = { ds_text }/>
-            <VidLeft title = "Economics" text_list = { econ_text }/>
+            <VidLeft bgColor="rgb(0, 73, 128)" className="vl-one" title = "Finance" imgText = { finTextList } projectText = { finText } projectSource={ finProjectSource }/>
+            <VidRight bgColor="rgb(46, 139, 120)" title = "Data Science" imgText = { dsTextList } projectText ={ dsText }/>
+            <VidLeft bgColor="rgb(32, 124, 158)" title = "Economics" imgText = { econTextList } projectText ={ econText }/>
+            <HomeExtra/>
         </div>
     );
 }

@@ -1,24 +1,8 @@
 .home-extra{
     min-height: 60vh;
     background-color: rgb(19, 85, 193);
-    font-size: 2rem;
     place-content: center;
 }
-.home-extra .he-text{
+.home-extra .terminal{
     place-self: center;
-    color:black;
-    padding: 10px;
-    background-color: rgb(156, 170, 193);
-    max-width: 40vw;
-    border: solid 1px black;
-    border-radius: 20px;
-}
-.home-extra .he-text{
-    width: 100%;
-    /*clip-path: circle(0% at 0 50%);*/
-}
-.home-extra .he-text.active{
-    clip-path: circle(150.0% at 0 50%);
-    transition: 1s;
-    transition-property: clip-path;
 }

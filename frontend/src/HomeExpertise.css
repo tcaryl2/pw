@@ -1,15 +1,32 @@
 .home-expertise{
     height:100vh;
     background-color: rgb(48, 146, 163);
-    
 }
+
 .home-expertise h1{
-    font-size: 4rem;
+    font-size: clamp(2rem, 10vw, 4rem);
     padding: 1vh 4vw;
     color:whitesmoke;
 }
 .home-expertise p{
-    font-size: 3rem;
+    font-size: clamp(1rem, 4vw, 3rem);
     color:whitesmoke;
     padding: 1vh 4vw;
+    max-height: 100%;
+}
+.home-expertise .show-one{
+    opacity: 0;
+    animation: textFadeIn 2s ease-out forwards;
+}
+@keyframes textFadeIn {
+    from {
+        filter: blur(1px);
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

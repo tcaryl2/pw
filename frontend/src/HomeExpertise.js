@@ -1,24 +1,24 @@
 import "./HomeExpertise.css"
 
-import ocean from "./ocean.jpg";
-import samsommer from "./samsommer.jpg";
-import river from "./river.jpg";
-import beach from "./beach.jpg";
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer"; // Import the useInView hook from the intersection-observer api
 
 const HomeExpertise = () => {
-    const imgList = [
-        ocean,
-        samsommer,
-        river,
-        beach
-    ]
-    
+    const { ref: refOne, inView: IsVisibleOne } = useInView() // Define a reference and a class name to update when intersecting the window
+    const [hasBeenVisible, setHasBeenVisible] = useState(false);
+
+    useEffect(() => {
+        if (IsVisibleOne) {
+            setHasBeenVisible(true); // Persist visibility state
+        }
+    }, [IsVisibleOne]);
+
     return (
         <div className="home-expertise">
-            <h1>
+            <h1 className={`${hasBeenVisible ? "show-one" : ""}`} ref={refOne}>
                 Interdisciplinary Expertise
             </h1>
-            <p>
+            <p className="typing">
                 With the breadth of knowledge I have available, 
                 I aim to position myself as an interdisciplinary
                 expert on finance, data science, and machine learning

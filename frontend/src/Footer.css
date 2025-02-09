@@ -1,4 +1,65 @@
 footer{
-    height:100vh;
-    background-image: linear-gradient(var(--nav-color), rgb(29, 151, 216));
+    height:auto;
+    background-color: var(--nav-color);
+    padding-bottom: 4vh;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+    cursor: pointer;
+}
+footer .featured .img-container{
+    max-width: 24vw;
+    font-size: 1.25rem;
+    text-align: left;
+}
+footer .featured .img-container p{
+    margin-left: 12px;
+}
+footer .featured img{
+    height: 34vh;
+    max-width: 24vw;
+    padding: 1px;
+    border-radius: 8px;
+}
+footer .featured img:hover{
+    border: solid 1px black;
+    padding: 0px;
+}
+footer .footer-contact{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+footer .featured{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+footer .menu{
+    margin-top: 8vh;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    margin-right: 6vw;
+}
+footer .row ul{
+    list-style: none;
+    width: 24vw;
+}
+footer .row ul li{
+    font-size: 1.5rem;
+}
+footer .row ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+footer .row ul li:nth-child(1){
+    font-size: 1.75rem;
+    text-decoration: underline;
 }

@@ -1,27 +1,22 @@
 import "./Code.css";
 
-const Code = () => {
+const Code = ({ terminal_name, code_text }) => {
     return (
         <div className="terminal">
             <div className="terminal-header">
-                Sample Terminal Output
+                { terminal_name }
             </div>
             <div className="terminal-body">
                 <code>
-                    <success>Compiled successfully!</success>
+                    <success>Deployment successfull!</success>
                     <br/>
                     <br/>
-                    You can now view frontend in the browser.
+                    Thank you for visiting my website. I built it using the MERN stack to 
+                    act as a more detailed version of my resume that you can view in your browser.
                     <br/>
                     <br/>
-                    <bold>Local:</bold> http://localhost:3000
-                    <br/>
-                    <br/>
-                    Note that the development build is not optimized.
-                    To create a production build, use npm run build.
-                    <br/>
-                    <br/>
-                    webpack compiled successfully
+                    The full code for this site is available publicly on github. To view the code visit my git repository here: 
+                    <terminalBlue>[temporary github url]</terminalBlue>
                 </code>
             </div>
         </div>

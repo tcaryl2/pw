@@ -1,16 +1,17 @@
 import "./VidLeft.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import ocean from "./ocean.jpg";
+import oldStockData from "./edData2.png";
 import samsommer from "./samsommer.jpg";
 import river from "./river.jpg";
 import beach from "./beach.jpg";
 
-const VidLeft = ({ text_list, title, img_list }) => {
+const VidLeft = ({ imgText, projectText, projectSource, title, bgColor }) => {
     const [currentSlide, setCurrentSlide]=useState(0);
 
     const imgList = [
-        ocean,
+        oldStockData,
         samsommer,
         river,
         beach
@@ -21,17 +22,17 @@ const VidLeft = ({ text_list, title, img_list }) => {
     };
 
     return (
-        <div className="vid-left">
+        <div style={{backgroundColor: bgColor}} className="vid-left">
             <div className="vl-header">
-                <h2>{ title }</h2>
+                <h2>{ title } </h2>
             </div>
             <div className="vl-content">
                 <div className="vl-slides">
                     {imgList.map((imgSrc, index) => (
                         <div key={index} className={`slide ${currentSlide === index ? "active" : ""}`}>
-                            <img src={imgSrc} alt={`Slide ${index + 1}`} />
+                            <Link to="/fined" rel="noopener noreferrer"><img src={imgSrc} alt={`Slide ${index + 1}`} /></Link>
                             <div className="info">
-                                <h3>Finance {index + 1}</h3>
+                                <h3>{imgText[index]}</h3>
                             </div>
                         </div>
                     ))}
@@ -46,7 +47,7 @@ const VidLeft = ({ text_list, title, img_list }) => {
                     </div>
                 </div>
                 <div className="vl-about">
-                    { text_list.join(" ")}
+                    { projectText[currentSlide] }
                 </div>
             </div>
         </div>

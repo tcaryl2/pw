@@ -1,20 +1,30 @@
 .terminal{
-    padding: 25px;
-    max-width: 40vw;
-    font-size: 1.1rem;
+    padding: 0px;
+    width: 40vw;
     font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    border-radius: var(--terminal-border-radius);
+    box-shadow: inset 0 0 8px white;
+    z-index: 30;
 }
 .terminal .terminal-header{
     color:whitesmoke;
-    font-weight: 600;
-    background-color: #000000e7;;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Inter';
+    letter-spacing: -1px;
+    background-color: #4b4b4bcf;
+    border: solid 1px rgba(0, 0, 0, 0.412);
     border-top-left-radius: var(--terminal-border-radius);
     border-top-right-radius: var(--terminal-border-radius);
-    padding: var(--terminal-padding);
+    padding: 4px 8px;
 }
+
 .terminal .terminal-body{
-    padding: var(--terminal-padding);
-    background-color: #1e1e1ee9;
+    font-size: 1.1rem;
+    font-family: 'Inter';
+    letter-spacing: -1px;
+    padding: 2px 8px 6px 8px;
+    background-color: #151515e7;
     border-bottom-left-radius: var(--terminal-border-radius);
     border-bottom-right-radius: var(--terminal-border-radius);
 }
@@ -27,5 +37,9 @@
 }
 .terminal .terminal-body code success{
     color:rgb(0, 159, 0);
+    font-weight: 525;
+}
+.terminal .terminal-body code terminalBlue{
+    color:rgb(37, 135, 150);
     font-weight: 525;
 }

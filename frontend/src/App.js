@@ -6,11 +6,14 @@ import Footer from './Footer.js';
 
 import Home from './Home.js';
 import DataScience from './DataScience.js';
+import Economics from './Economics.js';
+import Finance from './Finance.js';
+import Contact from './Contact.js';
 
 import Article from './Article.js';
-import VidLeft from './VidLeft.js';
-import VidRight from './VidRight.js';
 import Code from './Code.js';
+
+import FinanceED from './FinanceED.js';
 
 function App() {
   return (
@@ -20,10 +23,12 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/datascience" component={DataScience}/>
-          <Route path="/vl" component={VidLeft}/>
-          <Route path="/vr" component={VidRight}/>
+          <Route path="/economics" component={Economics}/>
+          <Route path="/finance" component={Finance}/>
+          <Route path="/contact" component={Contact}/>
           <Route path="/code" component={Code}/>
           <Route path="/article" component={Article}/>
+          <Route path="/finED" component={FinanceED}/>
         </Switch>
         <Footer/>
       </Router>

@@ -1,17 +1,16 @@
 import "./HomeExtra.css";
 
-import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import Code from "./Code";
+
+const terminal_name = "frontend - node < npm run start"
+const built_text = "I built this website from scratch using the mern stack You can now see";
 
 const HomeExtra = () => {
 
     return (
         <div className="home-extra">
-          <div className="he-text">
-            I built this website using the MERN stack 
-            to function as a resume and cover letter 
-            rolled into one. Test my APIs <Link to="/api">here</Link>
-          </div>
+          <Code className="terminal" code_text={ built_text } terminal_name={ terminal_name }/>
         </div>
       );
 }
