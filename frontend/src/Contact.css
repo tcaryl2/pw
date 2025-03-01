@@ -1,0 +1,49 @@
+.contact{
+    background-color: rgb(50, 162, 227);
+    align-items: center;
+    min-height: 100vh;
+}
+.contact .contact-text{
+    padding-top: 2vh;
+    place-self: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.contact .contact-text h6{
+    margin-bottom: 1vh;
+}
+.contact .contact-form{
+    place-self: center;
+    background-color: rgba(180, 248, 248, 0.922); 
+    width: 64vw;
+    height: 24vh;
+    border: solid 1px black;
+    border-radius: 12px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.contact .contact-form form{
+    padding: 18px;
+}
+.contact .contact-work .contact-header{
+    width:64vw;
+    place-self: center;
+    margin-bottom: 2vh;
+}
+.contact .contact-work h6{
+    width: 50vw; 
+    border-bottom: solid 1px black;
+}
+.contact .work-profiles{
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+}
+.contact .work-profiles .profile{
+    background-color:rgba(180, 248, 248, 0.922);
+    width: 12vw;
+    height: 22vh;
+    border: solid 1px black;
+    border-radius: 12px;
+    padding: 12px;
+}

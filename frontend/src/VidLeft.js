@@ -2,38 +2,29 @@ import "./VidLeft.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import oldStockData from "./edData2.png";
-import samsommer from "./samsommer.jpg";
-import river from "./river.jpg";
-import beach from "./beach.jpg";
-
-const VidLeft = ({ imgText, projectText, projectSource, title, bgColor }) => {
+const VidLeft = ({ bgColor, btnColor, title, projectHeader, imgList, projectText, projectList }) => {
     const [currentSlide, setCurrentSlide]=useState(0);
 
-    const imgList = [
-        oldStockData,
-        samsommer,
-        river,
-        beach
-    ]
-
     const manualNav = (index)=>{
+        
         setCurrentSlide(index);
     };
+
 
     return (
         <div style={{backgroundColor: bgColor}} className="vid-left">
             <div className="vl-header">
-                <h2>{ title } </h2>
+                <h2>{title}</h2>
             </div>
             <div className="vl-content">
                 <div className="vl-slides">
                     {imgList.map((imgSrc, index) => (
                         <div key={index} className={`slide ${currentSlide === index ? "active" : ""}`}>
-                            <Link to="/fined" rel="noopener noreferrer"><img src={imgSrc} alt={`Slide ${index + 1}`} /></Link>
-                            <div className="info">
-                                <h3>{imgText[index]}</h3>
-                            </div>
+                            {projectList?.length > 0 && (
+                                <Link to={projectList[currentSlide] ?? "#"} rel="noopener noreferrer">
+                                    <img src={imgSrc} alt={`Slide ${index + 1}`} />
+                                </Link>
+                            )}
                         </div>
                     ))}
                     <div className="gallery-nav">
@@ -47,7 +38,8 @@ const VidLeft = ({ imgText, projectText, projectSource, title, bgColor }) => {
                     </div>
                 </div>
                 <div className="vl-about">
-                    { projectText[currentSlide] }
+                    <h6>{projectHeader[currentSlide]}</h6>
+                    <p>{ projectText[currentSlide] }</p>
                 </div>
             </div>
         </div>

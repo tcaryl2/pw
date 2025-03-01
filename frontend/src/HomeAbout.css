@@ -1,44 +1,51 @@
-.home-about .indent{
-    margin-left: 1vw;
-}
 .home-about{
     height:100vh;
-    background-image: linear-gradient(rgb(19, 121, 181), rgb(19, 85, 193));
+    background-image: linear-gradient(rgb(28, 186, 189), rgb(19, 128, 191));
     display: flex;
     color:white;
     place-content: center;
 }
-.home-about h2{
-    color:rgb(239, 242, 243);
-    font-size: clamp(1rem, 3.5vw, 3.5rem);
+.home-about h4{
+    margin-top: -2vh;
+    color:white;
     font-weight: 600;
 }
 .home-about div{
     color:white;
-    margin-top: 15vh;
+    margin-top: 16vh;
 
 }
 .home-about .ha-img{
-    color:white;
-    padding-right: 10vw;
+    padding-right: 6vw;
 }
 .home-about img{
     width: clamp(90px, 30vw, 360px);
     height: clamp(120px, 80vh, 480px);
+    border-radius: 8px;
+}
+.home-about img:hover{
+    width: clamp(90px, 30vw, 360px);
+    height: clamp(120px, 80vh, 480px);
+    border-radius: 8px;
+    border: solid 1px black;
+    margin:-1px;
 }
 
+.home-about ul{
+    max-height: fit-content;
+}
 .home-about ul li{
     color:white;
-    list-style: none;
-    font-size: clamp(1rem, 2.75vw, 2.5rem);
-    padding-top: 2vh;
+    list-style:circle;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    margin-left: 2vw;
 }
 
 .home-about .ha-educ{
     color:white;
     width: 32vw;
-    padding-right: 0vw;
 }
 .home-about .ha-skills{
     color:white;
+    width: 26vw;
 }

@@ -1,0 +1,15 @@
+.finance .project-row{
+    display: flex;
+}
+.finance .main-content{
+    display: flex;
+}
+.finance .main-content .content-text{
+    background-color: green;
+}
+.finance .main-content .left-sidebar{
+    background-color: blue;
+}
+.finance .main-content .right-sidebar{
+    background-color: blue;
+}

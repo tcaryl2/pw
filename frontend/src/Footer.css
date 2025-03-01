@@ -39,27 +39,29 @@ footer .featured{
     text-align: center;
 }
 footer .menu{
-    margin-top: 8vh;
+    margin-top: 1vw;
 }
 footer .row{
     display: flex;
     justify-content: space-between;
     margin-left: 6vw;
-    margin-top: 2vh;
+    margin-top: 1vw;
     margin-right: 6vw;
 }
 footer .row ul{
     list-style: none;
     width: 24vw;
 }
-footer .row ul li{
-    font-size: 1.5rem;
-}
-footer .row ul li:hover{
-    color: white;
-    cursor: pointer;
-}
 footer .row ul li:nth-child(1){
-    font-size: 1.75rem;
+    font-size: clamp(1.1rem, 2vw, 1.75rem);
+
+}
+footer .row ul li{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+footer .row ul li a:hover{
+    color: white;
+}
+footer .row .row-header{
     text-decoration: underline;
 }

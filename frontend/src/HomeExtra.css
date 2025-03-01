@@ -1,8 +1,4 @@
 .home-extra{
     min-height: 60vh;
-    background-color: rgb(19, 85, 193);
     place-content: center;
-}
-.home-extra .terminal{
-    place-self: center;
 }

@@ -4,28 +4,26 @@
     align-items: center;
 }
 .vid-right h2{
-    font-size: 4rem;
+    font-size: clamp(3.9rem, 4vw, 4rem);
     text-align: right;
     padding: 2vh 8vw;
     color:white;
 }
-.vid-right h3{
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 2vh 0vw;
+.vid-right p{
     color:white;
 }
 .vid-right .vr-content{
     display: flex;
     place-content: center;
     margin: 0vh 4vw;
-    
 }
 .vid-right .vr-content .vr-about{
-    width: 40vw;
-    font-size: 2.75rem;
-    margin: 0vh 6vw 0vh 2vw;
-    padding: 1vh 2vw;
+    margin-top: -2vh;
+    width: 46vw;
+    padding: 0vh 4vw;
+    margin-right: 2vw;
+}
+.vr-about h6{
     color:white;
 }
 .vid-right .vr-content .vr-slides{
@@ -33,11 +31,10 @@
 }
 .vid-right .vr-slides{
     position: relative;
-    width: 600px;
-    height: 500px;    
+    width: 40vw;
+    height: 70vh;      
 }
 .vid-right .vr-slides img{
-    width: 600px;
     height: 425px;    
 }
 .vid-right .vr-slides .slide{
@@ -56,21 +53,6 @@
     width: 100%;
     border-radius: 5px;
 }
-.vid-right .vr-slides .slide .info{
-    position: absolute;
-    top:0;
-    padding: 15px 30px;
-}
-.vid-right .vr-slides .slide .info h2{
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.vid-right .vr-slides .slide .info p{
-    background: rgba(0, 0, 0, .2);
-    font-size: 16px;
-    border-radius: 4px;
-}
 .vid-right .vr-slides .gallery-nav{
     z-index: 2;
     position: absolute;
@@ -81,8 +63,8 @@
 }
 .vid-right .vr-slides .gallery-nav .btn{
     background: rgba(255, 255, 255, 0.693);
-    width: 1vw;
-    height: 1vw;
+    width: clamp(16px, 1.25vw, 24px);
+    height: clamp(16px, 1.25vw, 24px);
     margin: 10px;
     border-radius: 50%;
     cursor: pointer; 

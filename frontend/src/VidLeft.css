@@ -9,10 +9,7 @@
     padding: 2vh 4vw;
     color:white;
 }
-.vid-left h3{
-    font-size: 3.5rem;
-    text-align: left;
-    padding: 0px 12px;
+.vid-left p{
     color:white;
 }
 .vid-left .vl-content{
@@ -20,22 +17,22 @@
     place-content: center;
 }
 .vid-left .vl-content .vl-about{
-    width: 38vw;
-    font-size: 1.75rem;
+    margin-top: -2vh;
+    width: 44vw;
     padding: 0vh 4vw;
+    margin-left: 2vw;
+}
+.vl-about h6{
     color:white;
-    margin-left: 4vw;
 }
 .vid-left .vl-slides{
-    z-index: 2;
     position: relative;
-    width: 600px;
-    height: 500px;  
-    margin-right: 2vw;  
+    width: 40vw;
+    height: 70vh;   
 }
 .vid-left .vl-slides img{
-    width: 600px;
-    height: 425px;    
+    height: 58vh;
+    margin-left: 1vw;
 }
 .vid-left .vl-slides .slide{
     z-index: 1;
@@ -53,20 +50,6 @@
     width: 100%;
     border-radius: 5px;
 }
-.vid-left .vl-slides .slide .info{
-    margin-top: 36vh;
-    position: absolute;
-    top:0;
-    padding: 18px 18px;
-}
-.vid-left .vl-slides .slide .info h3{
-    color:white;
-    font-size: 2.5rem;
-    background: rgba(11, 78, 99, 0.841);
-    border-radius: 4px;
-    width: min-content;
-    min-width: 20vw;
-}
 .vid-left .vl-slides .gallery-nav{
     z-index: 2;
     position: absolute;
@@ -77,8 +60,8 @@
 }
 .vid-left .vl-slides .gallery-nav .btn{
     background: rgba(255, 255, 255, 0.693);
-    width: 1vw;
-    height: 1vw;
+    width: clamp(16px, 1.25vw, 24px);
+    height: clamp(16px, 1.25vw, 24px);
     margin: 10px;
     border-radius: 50%;
     cursor: pointer; 

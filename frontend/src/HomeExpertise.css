@@ -1,20 +1,18 @@
 .home-expertise{
-    height:100vh;
+    height:80vh;
     background-color: rgb(48, 146, 163);
 }
 
-.home-expertise h1{
-    font-size: clamp(2rem, 10vw, 4rem);
+.home-expertise h4{
     padding: 1vh 4vw;
     color:whitesmoke;
 }
 .home-expertise p{
-    font-size: clamp(1rem, 4vw, 3rem);
     color:whitesmoke;
     padding: 1vh 4vw;
     max-height: 100%;
 }
-.home-expertise .show-one{
+.home-expertise .show{
     opacity: 0;
     animation: textFadeIn 2s ease-out forwards;
 }

@@ -1,16 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;700&display=swap');
-
 :root{
-  --nav-color: rgb(28, 186, 189);
   --terminal-border-radius: 12px;
-}
 
-*{
+  --nav-color: rgb(28, 186, 189);
+  
+  --font-size-h1:clamp(3.25rem, 9vw, 8rem);
+  --font-size-h2:clamp(3.00rem, 9vw, 6rem);
+  --font-size-h3:clamp(2.5rem, 7vw, 5rem);
+  --font-size-h4:clamp(1.75rem, 4vw, 4rem);
+  --font-size-h5:clamp(1.75rem, 4vw, 3.25rem);
+  --font-size-h6:clamp(1.75rem, 3vw, 2.75rem);
+  --font-size-h7:clamp(1.75rem, 3vw, 2.5rem);
+
+  --font-size-p:clamp(.8rem, 2vw, 2rem);
+  --font-size-math: clamp(.75rem, 2vw, 1.5rem);
+  --font-size-small:clamp(.75, 2vw, 2em);
+  --font-size-code:clamp(.75rem, 1.2vw, 1.1rem)
+}
+*, h1, h2, h3, h4, h5, h6{
   margin:0;
   padding:0;
-  color:black;
+  color:black; /* Set default text to black */
 }
-
 body{
   font-family: 'Poppins', sans-serif;
 }
+h1{
+  font-size: var(--font-size-h1);
+}
+h2{
+  font-size: var(--font-size-h2);
+}
+h3{
+  font-size: var(--font-size-h3);
+}
+h4{
+  font-size: var(--font-size-h4);
+}
+h5{
+  font-size: var(--font-size-h5);
+}
+h6{
+  font-size: var(--font-size-h6);
+}
+.h7{
+  font-size: var(--font-size-h7);
+  font-weight: bold;
+}
+p{
+  font-size: var(--font-size-p);
+}
+p .latex{
+  font-size: var(--font-size-math);
+}
+small{
+  font-size: var(--font-size-small);
+}
+code{
+  font-size: var(--font-size-code);
+}
+

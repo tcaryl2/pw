@@ -1,54 +1,47 @@
 import "./HomeAbout.css";
-import ocean from "./ocean.jpg";
+
+import jacketPhoto from "./images/khakiWebsite.jpeg";
+
+import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
     return (
         <div className="home-about">
             <div className="ha-img">
-                <img src={ocean} alt="ocean-dev"></img>
+                <Link to="/about" rel="noopener noreferrer"><img src={jacketPhoto} alt="ocean-dev"></img></Link>
             </div>
             <div className="ha-educ">
-                <h2>
+                <h4>
                     Education
-                </h2>
+                </h4>
                 <ul>
                     <li>
-                        B.S. in Economics
+                        Bachelor of Science Economics
                     </li>
                     <li>
-                        Minor in Actuarial 
-                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Mathematics
+                        Minor in Actuarial Mathematics
                     </li>
                     <li>
-                        Google Data Analytics 
-                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                        Certificate
-                    </li>
-                    <li>
-                        Master's in Finance 
-                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                        (Ongoing)
+                        Google Data Analytics Certificate
                     </li>
                 </ul>
             </div>
             <div className="ha-skills">
-                <h2>
+                <h4>
                     Skills
-                </h2>
+                </h4>
                 <ul>
                     <li>
-                        Data Analysis 
-                        <br/>&nbsp;&nbsp;&nbsp;with SQL
+                        Advanced Excel and Macros
+                    </li>
+                    <li>
+                        Data Analysis with SQL
+                    </li>
+                    <li>
+                        Programming in Python
                     </li>
                     <li>
                         Financial Pricing
-                    </li>
-                    <li>
-                        Programming
-                    </li>
-                    <li>
-                        Machine Learning
                     </li>
                 </ul>
             </div>

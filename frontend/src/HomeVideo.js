@@ -1,14 +1,14 @@
 import "./HomeVideo.css";
-import test_vid from "./test_vid.mov";
+import test_vid from "./cmnist.mov";
 
 const HomeVideo = () => {
     return (
         <div className="home-video">
-            <video /*autoPlay loop*/ muted playsInline className="home-bv" src={test_vid}/>
+            <video /*autoPlay loop muted*/ playsInline className="home-bv" src={test_vid}/>
 
-            <div className="hv-text">
+            <h1 className="hv-text">
                 Text that goes on top of the video
-            </div>
+            </h1>
         </div>
       );
 }

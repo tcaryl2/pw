@@ -1,0 +1,19 @@
+.code-test{
+    color:white;
+}
+.code-test .show{
+    opacity: 0;
+    animation: textFadeIn 2s ease-out forwards;
+}
+@keyframes textFadeIn {
+    from {
+        filter: blur(1px);
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

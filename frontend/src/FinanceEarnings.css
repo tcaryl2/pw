@@ -1,0 +1,18 @@
+.fin-article .article-header{
+    max-width: 80vw;
+    border-bottom: solid 1px black;
+    place-self: center;
+}
+.fin-article .author-date{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+}
+.fin-article .article-main{
+    min-height: 100vh;
+    place-self: center;
+    margin: 2vh 10vw;
+}
+.fin-article .article-body p{
+    font-size: clamp(1rem, 2vw, 1rem);
+}

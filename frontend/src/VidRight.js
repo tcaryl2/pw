@@ -1,21 +1,9 @@
 import "./VidRight.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import ocean from "./ocean.jpg";
-import samsommer from "./samsommer.jpg";
-import river from "./river.jpg";
-import beach from "./beach.jpg";
-
-const VidRight = ({ title, imgText, projectText, bgColor}) => {
+const VidRight = ({ bgColor, title, projectHeader, imgList, projectText, projectList}) => {
     const [currentSlide, setCurrentSlide]=useState(0);
-
-    const imgList = [
-        ocean,
-        samsommer,
-        river,
-        beach
-    ]
-
     const manualNav = (index)=>{
         setCurrentSlide(index);
     };
@@ -27,15 +15,17 @@ const VidRight = ({ title, imgText, projectText, bgColor}) => {
             </div>
             <div className="vr-content">
                 <div className="vr-about">
-                    { projectText[currentSlide]}
+                    <h6>{projectHeader[currentSlide]}</h6>
+                   <p>{projectText[currentSlide]}</p>
                 </div>
                 <div className="vr-slides">
                     {imgList.map((imgSrc, index) => (
                         <div key={index} className={`slide ${currentSlide === index ? "active" : ""}`}>
-                            <img src={imgSrc} alt={`Slide ${index + 1}`} />
-                            <div className="info">
-                                <h3>{ imgText[index] }</h3>
-                            </div>
+                            {projectList?.length > 0 && (
+                                <Link to={projectList[currentSlide] ?? "#"} rel="noopener noreferrer">
+                                    <img src={imgSrc} alt={`Slide ${index + 1}`} />
+                                </Link>
+                            )}
                         </div>
                     ))}
                     <div className="gallery-nav">

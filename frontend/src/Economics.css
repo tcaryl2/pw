@@ -1,0 +1,15 @@
+.economics .project-row{
+    display: flex;
+}
+.economics .main-content{
+    display: flex;
+}
+.economics .main-content .content-text{
+    background-color: green;
+}
+.economics .main-content .left-sidebar{
+    background-color: blue;
+}
+.economics .main-content .right-sidebar{
+    background-color: blue;
+}
